@@ -1,0 +1,5 @@
+Q- What to store in database, what type of content? kaise store krun or kya krun?
+Q- kya kya fields required h sbse zruri h wo?
+T- Mongoose alternative-->prisma
+T- Github codespaces, Stackblitz and sandbox-->node etc ka environment already bna ke deta h
+T- mongoose export is different from common sports, 
