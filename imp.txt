@@ -6,3 +6,11 @@ T- mongoose export is different from common sports,
 
 
 #dev dependencies are dependencies which are not important for production, only in development, SYNTAX example: npm i -D nodemon
+
+
+#always wrap db interactions inside a try catch or promises(res,rej)
+# aur db interactions mein time lgta h-->async await are necessary
+
+#middleware or configuration settings-->app.use
+
+#json ko except kr rhe hain-->express.json() middleware  (nowadays we don't need body parsers etc)
