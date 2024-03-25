@@ -2,6 +2,7 @@ Q- What to store in database, what type of content? kaise store krun or kya krun
 Q- kya kya fields required h sbse zruri h wo?
 T- Mongoose alternative-->prisma
 T- Github codespaces, Stackblitz and sandbox-->node etc ka environment already bna ke deta h
+<<<<<<< HEAD
 T- mongoose export is different from common sports, 
 
 
@@ -14,3 +15,6 @@ T- mongoose export is different from common sports,
 #middleware or configuration settings-->app.use
 
 #json ko except kr rhe hain-->express.json() middleware  (nowadays we don't need body parsers etc)
+=======
+T- mongoose export is different from common sports, 
+>>>>>>> 7ef28d4a5abf714b2675467d55904edd266c3bdd

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+<<<<<<< HEAD
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,4 +22,11 @@
     "express": "^4.19.1",
     "mongoose": "^8.2.3"
   }
+=======
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "suyash",
+  "license": "ISC"
+>>>>>>> 7ef28d4a5abf714b2675467d55904edd266c3bdd
 }
