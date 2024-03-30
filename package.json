@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-<<<<<<< HEAD
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,17 +15,13 @@
     "prettier": "^3.2.5"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.1",
-    "mongoose": "^8.2.3"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.3",
+    "mongoose-aggregate-paginate-v2": "^1.0.7"
   }
-=======
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "suyash",
-  "license": "ISC"
->>>>>>> 7ef28d4a5abf714b2675467d55904edd266c3bdd
 }
