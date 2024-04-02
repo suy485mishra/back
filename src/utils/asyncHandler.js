@@ -1,7 +1,8 @@
 //by using promises
 // next is just a flag that helps us to tell that execute next operation
-const asyncHandler=(requestHandler)=>{
-(req,res,next)=>{
+ const asyncHandler=(requestHandler)=>{
+    //higher order function --->return 
+return (req,res,next)=>{
     Promise.resolve(requestHandler(req,res,next)).catch((err)=>next(err))
 }
 }

@@ -23,3 +23,7 @@ T- mongoose export is different from common sports,
 #index:true krne pe searching becomes easy, although a expensive operation
 
 #arrow function ke pass this ka reference ni hota
+
+#export default==>import ---- from 'path'
+#export {} or export const func===>import {----} from 'path'
+#export default h to manchaha import ho skta hai-->
