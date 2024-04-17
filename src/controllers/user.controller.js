@@ -15,22 +15,28 @@ const registerUser=asyncHandler(async(req,res)=>{
     //check for user creation, happended or not
     //return res or error
     const {fullName, email,username,password}=req.body
-    console.log('email',email);
+    // console.log('email',email);
 
     if(!fullName || !email || !username || !password){
         throw new ApiError(400,'All fields are required',);
     };
 
-    const existedUser=User.findOne({
+    const existedUser=await User.findOne({
         //check both fields
         $or: [{username},{email}]
     })
     if(existedUser){
          throw new ApiError(409,'User already registered',);
     }
+    console.log(req.files)
 
     const avatarLocalPath=req?.files?.avatar[0]?.path;//optionally lena --> '?.'
-    const coverImageLocalPath=req?.files?.coverImage[0]?.path;
+    // const coverImageLocalPath=req?.files?.coverImage[0]?.path;
+// upar wale se undefined error
+    let coverImageLocalPath;
+    if(req.files && Array.isArray(req.files.coverImage) && req.files.coverImage.length>0){
+        coverImageLocalPath=req.files.coverImage[0].path    
+    }
     //check for avatar, cover img is anyways optional
     if(!avatarLocalPath){
         throw new ApiError(400,'Avatar is required!!!',);
