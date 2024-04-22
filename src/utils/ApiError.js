@@ -19,7 +19,7 @@ class ApiError extends Error {
     }
   }
 }
-export default ApiError;
+export { ApiError};
 
 // Class Declaration: The code defines a class named ApiError which extends the built-in Error class.
 //  This means ApiError inherits properties and behavior from Error.
